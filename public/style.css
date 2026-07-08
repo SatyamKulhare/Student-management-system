@@ -1,0 +1,356 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+    padding:30px;
+}
+
+/* Heading */
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+    color:#1e3a8a;
+    font-size:2.5rem;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    margin:auto;
+}
+
+/* Buttons */
+
+.btn{
+    display:inline-block;
+    padding:10px 18px;
+    border:none;
+    border-radius:8px;
+    text-decoration:none;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+    font-weight:500;
+}
+
+.add-btn{
+    background:#2563eb;
+    color:white;
+}
+
+.add-btn:hover{
+    background:#1d4ed8;
+}
+
+.edit-btn{
+    background:#f59e0b;
+    color:white;
+}
+
+.edit-btn:hover{
+    background:#d97706;
+}
+
+.delete-btn{
+    background:#ef4444;
+    color:white;
+}
+
+.delete-btn:hover{
+    background:#dc2626;
+}
+
+.view-btn{
+    background:#10b981;
+    color:white;
+}
+
+.view-btn:hover{
+    background:#059669;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+th{
+    background:#1e40af;
+    color:white;
+    padding:15px;
+}
+
+td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+}
+
+tr:hover{
+    background:#f8f9ff;
+}
+
+/* Form */
+
+form{
+    width:450px;
+    margin:30px auto;
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+#dlt{
+    width:120px;
+    margin:25px auto;
+    padding:10px;
+    border-radius:12px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+input{
+    width:100%;
+    margin:8px;
+    padding:13px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+    transition:.3s;
+}
+
+input:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 5px rgba(37,99,235,.3);
+}
+
+select{
+    width:100%;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+button{
+    padding:10px 18px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+/* Submit Button */
+
+.submit-btn{
+    width:100%;
+    margin-top:20px;
+    background:#2563eb;
+    color:white;
+}
+
+.submit-btn:hover{
+    background:#1d4ed8;
+}
+
+/* Student Card */
+
+.card{
+    width:850px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.card h2{
+    margin-bottom:20px;
+    color:#1e3a8a;
+}
+
+.card p{
+    margin:10px 0;
+    font-size:17px;
+}
+
+/* Action Buttons */
+
+.action{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+.action form{
+    width:auto;
+    margin:0;
+    padding:0;
+    background:none;
+    box-shadow:none;
+}
+
+/* Back Button */
+
+.back{
+    display:block;
+    width:150px;
+    margin:30px auto;
+    text-align:center;
+    text-decoration:none;
+    background:#6b7280;
+    color:white;
+    padding:10px;
+    border-radius:8px;
+}
+
+.back:hover{
+    background:#4b5563;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+table{
+    font-size:14px;
+}
+
+form,
+.card{
+    width:95%;
+}
+
+.action{
+    flex-direction:column;
+}
+
+}
+/* ===========================
+   Responsive Design
+=========================== */
+
+@media screen and (max-width:768px){
+
+body{
+    padding:15px;
+}
+
+h1{
+    font-size:28px;
+}
+
+h2{
+    font-size:24px;
+    text-align:center;
+}
+
+.container,
+.conatiner{
+    width:100%;
+    overflow-x:auto;
+}
+
+/* Table */
+
+table{
+    min-width:750px;
+}
+
+th,
+td{
+    padding:10px;
+    font-size:14px;
+}
+
+/* Forms */
+
+form{
+    width:100%;
+    max-width:100%;
+    padding:20px;
+}
+
+input,
+select,
+button{
+    width:100%;
+    margin-top:10px;
+}
+
+/* Buttons */
+
+.btn,
+button{
+    display:block;
+    text-align:center;
+    margin:8px 0;
+}
+
+/* Student Card */
+
+.card{
+    width:100%;
+    padding:20px;
+}
+
+}
+
+/* Small Phones */
+
+@media screen and (max-width:480px){
+
+body{
+    padding:10px;
+}
+
+h1{
+    font-size:22px;
+}
+
+h2{
+    font-size:20px;
+}
+
+th,
+td{
+    font-size:12px;
+    padding:8px;
+}
+
+.card{
+    padding:15px;
+}
+
+input,
+button{
+    font-size:15px;
+}
+
+}
+
+.table-responsive{
+    width:100%;
+    overflow-x:auto;
+}
+
+.table-responsive table{
+    min-width:850px;
+}
