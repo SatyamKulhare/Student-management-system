@@ -44,7 +44,8 @@ let students = [
 ]
 
 //CRUD OPERATIONS -->
-
+app.get("/",(req,res)=>{
+    res.redirect("/dashboard")});
 app.get("/dashboard",(req,res)=>{
     res.render("index.ejs",{ students })
 });
